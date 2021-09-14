@@ -13,6 +13,9 @@
 		AE5A488826F093DC008D62FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE5A488626F093DC008D62FF /* Main.storyboard */; };
 		AE5A489426F093DC008D62FF /* wanandroidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5A489326F093DC008D62FF /* wanandroidTests.swift */; };
 		AE5A489F26F093DC008D62FF /* wanandroidUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5A489E26F093DC008D62FF /* wanandroidUITests.swift */; };
+		AE5A48C026F096FD008D62FF /* Http.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5A48BF26F096FD008D62FF /* Http.swift */; };
+		AE5A48C926F09761008D62FF /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5A48C826F09761008D62FF /* LoginModel.swift */; };
+		AE5A48D126F0976E008D62FF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5A48D026F0976E008D62FF /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,9 @@
 		AE5A489A26F093DC008D62FF /* wanandroidUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wanandroidUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5A489E26F093DC008D62FF /* wanandroidUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wanandroidUITests.swift; sourceTree = "<group>"; };
 		AE5A48A026F093DC008D62FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE5A48BF26F096FD008D62FF /* Http.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Http.swift; sourceTree = "<group>"; };
+		AE5A48C826F09761008D62FF /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		AE5A48D026F0976E008D62FF /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +102,9 @@
 		AE5A487F26F093DB008D62FF /* wanandroid */ = {
 			isa = PBXGroup;
 			children = (
-				AE5A488026F093DB008D62FF /* AppDelegate.swift */,
-				AE5A488226F093DB008D62FF /* ViewController.swift */,
+				AE5A48BE26F096CB008D62FF /* Common */,
+				AE5A48BD26F096BE008D62FF /* Module */,
+				AE5A48B526F09690008D62FF /* Application */,
 				AE5A488426F093DC008D62FF /* Assets.xcassets */,
 				AE5A488626F093DC008D62FF /* Main.storyboard */,
 				AE5A488926F093DC008D62FF /* Info.plist */,
@@ -122,6 +129,72 @@
 				AE5A48A026F093DC008D62FF /* Info.plist */,
 			);
 			path = wanandroidUITests;
+			sourceTree = "<group>";
+		};
+		AE5A48B226F09664008D62FF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AE5A48D026F0976E008D62FF /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AE5A48B326F0966D008D62FF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AE5A488226F093DB008D62FF /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AE5A48B426F09672008D62FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AE5A48C826F09761008D62FF /* LoginModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AE5A48B526F09690008D62FF /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				AE5A48B626F09697008D62FF /* Delegates */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		AE5A48B626F09697008D62FF /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				AE5A488026F093DB008D62FF /* AppDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		AE5A48BD26F096BE008D62FF /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				AE5A48B426F09672008D62FF /* Model */,
+				AE5A48B326F0966D008D62FF /* Controller */,
+				AE5A48B226F09664008D62FF /* View */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		AE5A48BE26F096CB008D62FF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AE5A48C726F09707008D62FF /* Client */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		AE5A48C726F09707008D62FF /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				AE5A48BF26F096FD008D62FF /* Http.swift */,
+			);
+			path = Client;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,7 +327,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE5A488326F093DB008D62FF /* ViewController.swift in Sources */,
+				AE5A48C926F09761008D62FF /* LoginModel.swift in Sources */,
 				AE5A488126F093DB008D62FF /* AppDelegate.swift in Sources */,
+				AE5A48D126F0976E008D62FF /* LoginView.swift in Sources */,
+				AE5A48C026F096FD008D62FF /* Http.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
