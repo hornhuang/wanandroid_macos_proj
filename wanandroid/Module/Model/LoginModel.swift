@@ -8,20 +8,20 @@
 import Foundation
 
 class LoginModel {
-    fileprivate var username = ""
-    fileprivate var password = ""
+    fileprivate var username = "_yuanhao"
+    fileprivate var password = "QAZqaz123456"
 //    fileprivate var LoginModel?
 
     func login() {
-        guard username.count == 0 else {
+        if username.count == 0 {
             Notify.post(name: .LoginFailed, object: "账号不能为空")
             return
         }
-        guard password.count == 0 else {
+        if password.count == 0 {
             Notify.post(name: .LoginFailed, object: "密码不能为空")
             return
         }
-        HttpManager.POSTRequestSession(urlstr: wanandroidBaseUrl + "/user/login", parameters: ["username": username, "password": password], Success: { response in
+        HttpManager.POSTRequestSession(urlstr: "https://www.wanandroid.com/user/login", parameters: ["username": username, "password": password], Success: { response in
             guard let userData = response as? NSDictionary else {
                 return
             }

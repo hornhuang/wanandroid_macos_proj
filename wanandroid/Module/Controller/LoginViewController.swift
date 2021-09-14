@@ -16,7 +16,7 @@ class LoginViewController: NSViewController {
     }
     
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: coder)
     }
     
     override func loadView() {
@@ -25,6 +25,8 @@ class LoginViewController: NSViewController {
         if let view = self.loginView {
             self.view = view
         }
+        self.loginModel = LoginModel()
+        self.loginModel?.login()
     }
     
     override func viewDidLoad() {
