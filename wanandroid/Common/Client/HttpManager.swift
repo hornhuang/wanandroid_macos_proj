@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// https://www.jianshu.com/p/d689e7542f7e
 class HttpManager {
     static let configuration: URLSessionConfiguration = URLSessionConfiguration.default
     // 定义一个URLSession变量
