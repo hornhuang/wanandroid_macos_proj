@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE5A488126F093DB008D62FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5A488026F093DB008D62FF /* AppDelegate.swift */; };
+		AE5A488326F093DB008D62FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5A488226F093DB008D62FF /* ViewController.swift */; };
+		AE5A488526F093DC008D62FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE5A488426F093DC008D62FF /* Assets.xcassets */; };
+		AE5A488826F093DC008D62FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE5A488626F093DC008D62FF /* Main.storyboard */; };
+		AE5A489426F093DC008D62FF /* wanandroidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5A489326F093DC008D62FF /* wanandroidTests.swift */; };
+		AE5A489F26F093DC008D62FF /* wanandroidUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5A489E26F093DC008D62FF /* wanandroidUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE5A489026F093DC008D62FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE5A487526F093DB008D62FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE5A487C26F093DB008D62FF;
+			remoteInfo = wanandroid;
+		};
+		AE5A489B26F093DC008D62FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE5A487526F093DB008D62FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE5A487C26F093DB008D62FF;
+			remoteInfo = wanandroid;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AE5A487D26F093DB008D62FF /* wanandroid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wanandroid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE5A488026F093DB008D62FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE5A488226F093DB008D62FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AE5A488426F093DC008D62FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE5A488726F093DC008D62FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE5A488926F093DC008D62FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE5A488A26F093DC008D62FF /* wanandroid.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = wanandroid.entitlements; sourceTree = "<group>"; };
+		AE5A488F26F093DC008D62FF /* wanandroidTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wanandroidTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE5A489326F093DC008D62FF /* wanandroidTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wanandroidTests.swift; sourceTree = "<group>"; };
+		AE5A489526F093DC008D62FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE5A489A26F093DC008D62FF /* wanandroidUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wanandroidUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE5A489E26F093DC008D62FF /* wanandroidUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wanandroidUITests.swift; sourceTree = "<group>"; };
+		AE5A48A026F093DC008D62FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE5A487A26F093DB008D62FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE5A488C26F093DC008D62FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE5A489726F093DC008D62FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE5A487426F093DB008D62FF = {
+			isa = PBXGroup;
+			children = (
+				AE5A487F26F093DB008D62FF /* wanandroid */,
+				AE5A489226F093DC008D62FF /* wanandroidTests */,
+				AE5A489D26F093DC008D62FF /* wanandroidUITests */,
+				AE5A487E26F093DB008D62FF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE5A487E26F093DB008D62FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE5A487D26F093DB008D62FF /* wanandroid.app */,
+				AE5A488F26F093DC008D62FF /* wanandroidTests.xctest */,
+				AE5A489A26F093DC008D62FF /* wanandroidUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE5A487F26F093DB008D62FF /* wanandroid */ = {
+			isa = PBXGroup;
+			children = (
+				AE5A488026F093DB008D62FF /* AppDelegate.swift */,
+				AE5A488226F093DB008D62FF /* ViewController.swift */,
+				AE5A488426F093DC008D62FF /* Assets.xcassets */,
+				AE5A488626F093DC008D62FF /* Main.storyboard */,
+				AE5A488926F093DC008D62FF /* Info.plist */,
+				AE5A488A26F093DC008D62FF /* wanandroid.entitlements */,
+			);
+			path = wanandroid;
+			sourceTree = "<group>";
+		};
+		AE5A489226F093DC008D62FF /* wanandroidTests */ = {
+			isa = PBXGroup;
+			children = (
+				AE5A489326F093DC008D62FF /* wanandroidTests.swift */,
+				AE5A489526F093DC008D62FF /* Info.plist */,
+			);
+			path = wanandroidTests;
+			sourceTree = "<group>";
+		};
+		AE5A489D26F093DC008D62FF /* wanandroidUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AE5A489E26F093DC008D62FF /* wanandroidUITests.swift */,
+				AE5A48A026F093DC008D62FF /* Info.plist */,
+			);
+			path = wanandroidUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE5A487C26F093DB008D62FF /* wanandroid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE5A48A326F093DC008D62FF /* Build configuration list for PBXNativeTarget "wanandroid" */;
+			buildPhases = (
+				AE5A487926F093DB008D62FF /* Sources */,
+				AE5A487A26F093DB008D62FF /* Frameworks */,
+				AE5A487B26F093DB008D62FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wanandroid;
+			productName = wanandroid;
+			productReference = AE5A487D26F093DB008D62FF /* wanandroid.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE5A488E26F093DC008D62FF /* wanandroidTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE5A48A626F093DC008D62FF /* Build configuration list for PBXNativeTarget "wanandroidTests" */;
+			buildPhases = (
+				AE5A488B26F093DC008D62FF /* Sources */,
+				AE5A488C26F093DC008D62FF /* Frameworks */,
+				AE5A488D26F093DC008D62FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE5A489126F093DC008D62FF /* PBXTargetDependency */,
+			);
+			name = wanandroidTests;
+			productName = wanandroidTests;
+			productReference = AE5A488F26F093DC008D62FF /* wanandroidTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AE5A489926F093DC008D62FF /* wanandroidUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE5A48A926F093DC008D62FF /* Build configuration list for PBXNativeTarget "wanandroidUITests" */;
+			buildPhases = (
+				AE5A489626F093DC008D62FF /* Sources */,
+				AE5A489726F093DC008D62FF /* Frameworks */,
+				AE5A489826F093DC008D62FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE5A489C26F093DC008D62FF /* PBXTargetDependency */,
+			);
+			name = wanandroidUITests;
+			productName = wanandroidUITests;
+			productReference = AE5A489A26F093DC008D62FF /* wanandroidUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE5A487526F093DB008D62FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					AE5A487C26F093DB008D62FF = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					AE5A488E26F093DC008D62FF = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = AE5A487C26F093DB008D62FF;
+					};
+					AE5A489926F093DC008D62FF = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = AE5A487C26F093DB008D62FF;
+					};
+				};
+			};
+			buildConfigurationList = AE5A487826F093DB008D62FF /* Build configuration list for PBXProject "wanandroid" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE5A487426F093DB008D62FF;
+			productRefGroup = AE5A487E26F093DB008D62FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE5A487C26F093DB008D62FF /* wanandroid */,
+				AE5A488E26F093DC008D62FF /* wanandroidTests */,
+				AE5A489926F093DC008D62FF /* wanandroidUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE5A487B26F093DB008D62FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE5A488526F093DC008D62FF /* Assets.xcassets in Resources */,
+				AE5A488826F093DC008D62FF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE5A488D26F093DC008D62FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE5A489826F093DC008D62FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE5A487926F093DB008D62FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE5A488326F093DB008D62FF /* ViewController.swift in Sources */,
+				AE5A488126F093DB008D62FF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE5A488B26F093DC008D62FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE5A489426F093DC008D62FF /* wanandroidTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE5A489626F093DC008D62FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE5A489F26F093DC008D62FF /* wanandroidUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE5A489126F093DC008D62FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE5A487C26F093DB008D62FF /* wanandroid */;
+			targetProxy = AE5A489026F093DC008D62FF /* PBXContainerItemProxy */;
+		};
+		AE5A489C26F093DC008D62FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE5A487C26F093DB008D62FF /* wanandroid */;
+			targetProxy = AE5A489B26F093DC008D62FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AE5A488626F093DC008D62FF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE5A488726F093DC008D62FF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE5A48A126F093DC008D62FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AE5A48A226F093DC008D62FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		AE5A48A426F093DC008D62FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = wanandroid/wanandroid.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = wanandroid/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hornhaung.wanandroid;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AE5A48A526F093DC008D62FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = wanandroid/wanandroid.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = wanandroid/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hornhaung.wanandroid;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AE5A48A726F093DC008D62FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = wanandroidTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hornhaung.wanandroidTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wanandroid.app/Contents/MacOS/wanandroid";
+			};
+			name = Debug;
+		};
+		AE5A48A826F093DC008D62FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = wanandroidTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hornhaung.wanandroidTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wanandroid.app/Contents/MacOS/wanandroid";
+			};
+			name = Release;
+		};
+		AE5A48AA26F093DC008D62FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = wanandroidUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hornhaung.wanandroidUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = wanandroid;
+			};
+			name = Debug;
+		};
+		AE5A48AB26F093DC008D62FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = wanandroidUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hornhaung.wanandroidUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = wanandroid;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE5A487826F093DB008D62FF /* Build configuration list for PBXProject "wanandroid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE5A48A126F093DC008D62FF /* Debug */,
+				AE5A48A226F093DC008D62FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE5A48A326F093DC008D62FF /* Build configuration list for PBXNativeTarget "wanandroid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE5A48A426F093DC008D62FF /* Debug */,
+				AE5A48A526F093DC008D62FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE5A48A626F093DC008D62FF /* Build configuration list for PBXNativeTarget "wanandroidTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE5A48A726F093DC008D62FF /* Debug */,
+				AE5A48A826F093DC008D62FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE5A48A926F093DC008D62FF /* Build configuration list for PBXNativeTarget "wanandroidUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE5A48AA26F093DC008D62FF /* Debug */,
+				AE5A48AB26F093DC008D62FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE5A487526F093DB008D62FF /* Project object */;
+}
