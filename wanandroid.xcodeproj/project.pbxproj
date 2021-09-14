@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AE5A488126F093DB008D62FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5A488026F093DB008D62FF /* AppDelegate.swift */; };
-		AE5A488326F093DB008D62FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5A488226F093DB008D62FF /* ViewController.swift */; };
+		AE5A488326F093DB008D62FF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5A488226F093DB008D62FF /* LoginViewController.swift */; };
 		AE5A488526F093DC008D62FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE5A488426F093DC008D62FF /* Assets.xcassets */; };
 		AE5A488826F093DC008D62FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE5A488626F093DC008D62FF /* Main.storyboard */; };
 		AE5A489426F093DC008D62FF /* wanandroidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5A489326F093DC008D62FF /* wanandroidTests.swift */; };
@@ -16,8 +16,14 @@
 		AE5A48C026F096FD008D62FF /* HttpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5A48BF26F096FD008D62FF /* HttpManager.swift */; };
 		AE5A48C926F09761008D62FF /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5A48C826F09761008D62FF /* LoginModel.swift */; };
 		AE5A48D126F0976E008D62FF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5A48D026F0976E008D62FF /* LoginView.swift */; };
-		AE5B1A6D26F09BEA000D8DBA /* HttpCallBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5B1A6C26F09BEA000D8DBA /* HttpCallBack.swift */; };
 		AE5B1A7826F09EAD000D8DBA /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5B1A7726F09EAD000D8DBA /* Urls.swift */; };
+		AE5B1A8026F0A59C000D8DBA /* Notify.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5B1A7F26F0A59C000D8DBA /* Notify.swift */; };
+		AE5B1A8D26F0AAB2000D8DBA /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5B1A8C26F0AAB2000D8DBA /* UserModel.swift */; };
+		AE5B1A9926F0C5B2000D8DBA /* LoginTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5B1A9826F0C5B2000D8DBA /* LoginTableView.swift */; };
+		AE5B1AA126F0C5C2000D8DBA /* InputTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5B1AA026F0C5C2000D8DBA /* InputTextCell.swift */; };
+		AE5B1AA626F0C5F7000D8DBA /* LoginBtnCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5B1AA526F0C5F7000D8DBA /* LoginBtnCell.swift */; };
+		AE5B1AB726F0CF7C000D8DBA /* LoginModelDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5B1AB626F0CF7C000D8DBA /* LoginModelDataSource.swift */; };
+		AE5B1AC526F0D627000D8DBA /* LoginWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5B1AC426F0D627000D8DBA /* LoginWindowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +46,7 @@
 /* Begin PBXFileReference section */
 		AE5A487D26F093DB008D62FF /* wanandroid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wanandroid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5A488026F093DB008D62FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AE5A488226F093DB008D62FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AE5A488226F093DB008D62FF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AE5A488426F093DC008D62FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE5A488726F093DC008D62FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AE5A488926F093DC008D62FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,8 +60,14 @@
 		AE5A48BF26F096FD008D62FF /* HttpManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpManager.swift; sourceTree = "<group>"; };
 		AE5A48C826F09761008D62FF /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		AE5A48D026F0976E008D62FF /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		AE5B1A6C26F09BEA000D8DBA /* HttpCallBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpCallBack.swift; sourceTree = "<group>"; };
 		AE5B1A7726F09EAD000D8DBA /* Urls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
+		AE5B1A7F26F0A59C000D8DBA /* Notify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notify.swift; sourceTree = "<group>"; };
+		AE5B1A8C26F0AAB2000D8DBA /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		AE5B1A9826F0C5B2000D8DBA /* LoginTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableView.swift; sourceTree = "<group>"; };
+		AE5B1AA026F0C5C2000D8DBA /* InputTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextCell.swift; sourceTree = "<group>"; };
+		AE5B1AA526F0C5F7000D8DBA /* LoginBtnCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBtnCell.swift; sourceTree = "<group>"; };
+		AE5B1AB626F0CF7C000D8DBA /* LoginModelDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModelDataSource.swift; sourceTree = "<group>"; };
+		AE5B1AC426F0D627000D8DBA /* LoginWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWindowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +150,7 @@
 		AE5A48B226F09664008D62FF /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AE5A48D026F0976E008D62FF /* LoginView.swift */,
+				AE5B1A9726F0C58D000D8DBA /* Login */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -146,7 +158,7 @@
 		AE5A48B326F0966D008D62FF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				AE5A488226F093DB008D62FF /* ViewController.swift */,
+				AE5A488226F093DB008D62FF /* LoginViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -155,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				AE5A48C826F09761008D62FF /* LoginModel.swift */,
+				AE5B1AB626F0CF7C000D8DBA /* LoginModelDataSource.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -188,6 +201,8 @@
 		AE5A48BE26F096CB008D62FF /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				AE5B1A8B26F0AAA9000D8DBA /* Bean */,
+				AE5B1A8426F0A5A6000D8DBA /* Notification */,
 				AE5A48C726F09707008D62FF /* Client */,
 			);
 			path = Common;
@@ -196,19 +211,38 @@
 		AE5A48C726F09707008D62FF /* Client */ = {
 			isa = PBXGroup;
 			children = (
-				AE5B1A6B26F09BC6000D8DBA /* CallBack */,
 				AE5A48BF26F096FD008D62FF /* HttpManager.swift */,
 				AE5B1A7726F09EAD000D8DBA /* Urls.swift */,
 			);
 			path = Client;
 			sourceTree = "<group>";
 		};
-		AE5B1A6B26F09BC6000D8DBA /* CallBack */ = {
+		AE5B1A8426F0A5A6000D8DBA /* Notification */ = {
 			isa = PBXGroup;
 			children = (
-				AE5B1A6C26F09BEA000D8DBA /* HttpCallBack.swift */,
+				AE5B1A7F26F0A59C000D8DBA /* Notify.swift */,
 			);
-			path = CallBack;
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		AE5B1A8B26F0AAA9000D8DBA /* Bean */ = {
+			isa = PBXGroup;
+			children = (
+				AE5B1A8C26F0AAB2000D8DBA /* UserModel.swift */,
+			);
+			path = Bean;
+			sourceTree = "<group>";
+		};
+		AE5B1A9726F0C58D000D8DBA /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				AE5A48D026F0976E008D62FF /* LoginView.swift */,
+				AE5B1A9826F0C5B2000D8DBA /* LoginTableView.swift */,
+				AE5B1AA026F0C5C2000D8DBA /* InputTextCell.swift */,
+				AE5B1AA526F0C5F7000D8DBA /* LoginBtnCell.swift */,
+				AE5B1AC426F0D627000D8DBA /* LoginWindowController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,13 +374,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE5A488326F093DB008D62FF /* ViewController.swift in Sources */,
+				AE5A488326F093DB008D62FF /* LoginViewController.swift in Sources */,
 				AE5A48C926F09761008D62FF /* LoginModel.swift in Sources */,
-				AE5B1A6D26F09BEA000D8DBA /* HttpCallBack.swift in Sources */,
 				AE5A488126F093DB008D62FF /* AppDelegate.swift in Sources */,
 				AE5A48D126F0976E008D62FF /* LoginView.swift in Sources */,
+				AE5B1A8D26F0AAB2000D8DBA /* UserModel.swift in Sources */,
+				AE5B1A8026F0A59C000D8DBA /* Notify.swift in Sources */,
+				AE5B1AB726F0CF7C000D8DBA /* LoginModelDataSource.swift in Sources */,
+				AE5B1A9926F0C5B2000D8DBA /* LoginTableView.swift in Sources */,
 				AE5B1A7826F09EAD000D8DBA /* Urls.swift in Sources */,
+				AE5B1AC526F0D627000D8DBA /* LoginWindowController.swift in Sources */,
 				AE5A48C026F096FD008D62FF /* HttpManager.swift in Sources */,
+				AE5B1AA126F0C5C2000D8DBA /* InputTextCell.swift in Sources */,
+				AE5B1AA626F0C5F7000D8DBA /* LoginBtnCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

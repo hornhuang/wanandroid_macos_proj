@@ -9,12 +9,14 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
     
-
+    lazy var windowController: LoginWindowController = {
+        let wondowVC = LoginWindowController()
+        return wondowVC
+    }()
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
+        self.windowController.showWindow(self)
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {

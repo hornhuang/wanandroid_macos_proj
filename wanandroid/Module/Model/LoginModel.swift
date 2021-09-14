@@ -10,28 +10,26 @@ import Foundation
 class LoginModel {
     fileprivate var username = ""
     fileprivate var password = ""
+//    fileprivate var LoginModel?
 
-    func login(callback: HttpBaseCallBack) -> Bool {
+    func login() {
         guard username.count == 0 else {
-            callback.onFailed(errMsg: "账号不能为空")
-            return false
+            Notify.post(name: .LoginFailed, object: "账号不能为空")
+            return
         }
         guard password.count == 0 else {
-            callback.onFailed(errMsg: "密码不能为空")
-            return false
+            Notify.post(name: .LoginFailed, object: "密码不能为空")
+            return
         }
-        HttpManager.POSTRequestSession(urlstr: wanandroidBaseUrl + "/user/login", parameters: ["productKey": username, "area": password], Success: { response in
-
-            let dict = response as? NSDictionary
-            if dict == nil {
+        HttpManager.POSTRequestSession(urlstr: wanandroidBaseUrl + "/user/login", parameters: ["username": username, "password": password], Success: { response in
+            guard let userData = response as? NSDictionary else {
                 return
             }
-            print("原生请求返回数据", dict!)
-
+            Notify.post(name: .LoginSucceed, object: userData)
+            print("原生请求返回数据", userData)
         }, Fail: { error in
-            callback.onFailed(errMsg: "")
+            Notify.post(name: .LoginFailed, object: error)
             print("请求出错", error)
         })
-        return true
     }
 }
