@@ -13,9 +13,10 @@
 		AE5A488826F093DC008D62FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE5A488626F093DC008D62FF /* Main.storyboard */; };
 		AE5A489426F093DC008D62FF /* wanandroidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5A489326F093DC008D62FF /* wanandroidTests.swift */; };
 		AE5A489F26F093DC008D62FF /* wanandroidUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5A489E26F093DC008D62FF /* wanandroidUITests.swift */; };
-		AE5A48C026F096FD008D62FF /* Http.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5A48BF26F096FD008D62FF /* Http.swift */; };
+		AE5A48C026F096FD008D62FF /* HttpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5A48BF26F096FD008D62FF /* HttpManager.swift */; };
 		AE5A48C926F09761008D62FF /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5A48C826F09761008D62FF /* LoginModel.swift */; };
 		AE5A48D126F0976E008D62FF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5A48D026F0976E008D62FF /* LoginView.swift */; };
+		AE5B1A6D26F09BEA000D8DBA /* HttpCallBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5B1A6C26F09BEA000D8DBA /* HttpCallBack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,9 +50,10 @@
 		AE5A489A26F093DC008D62FF /* wanandroidUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wanandroidUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5A489E26F093DC008D62FF /* wanandroidUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wanandroidUITests.swift; sourceTree = "<group>"; };
 		AE5A48A026F093DC008D62FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AE5A48BF26F096FD008D62FF /* Http.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Http.swift; sourceTree = "<group>"; };
+		AE5A48BF26F096FD008D62FF /* HttpManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpManager.swift; sourceTree = "<group>"; };
 		AE5A48C826F09761008D62FF /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		AE5A48D026F0976E008D62FF /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		AE5B1A6C26F09BEA000D8DBA /* HttpCallBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpCallBack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,9 +194,18 @@
 		AE5A48C726F09707008D62FF /* Client */ = {
 			isa = PBXGroup;
 			children = (
-				AE5A48BF26F096FD008D62FF /* Http.swift */,
+				AE5B1A6B26F09BC6000D8DBA /* CallBack */,
+				AE5A48BF26F096FD008D62FF /* HttpManager.swift */,
 			);
 			path = Client;
+			sourceTree = "<group>";
+		};
+		AE5B1A6B26F09BC6000D8DBA /* CallBack */ = {
+			isa = PBXGroup;
+			children = (
+				AE5B1A6C26F09BEA000D8DBA /* HttpCallBack.swift */,
+			);
+			path = CallBack;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,9 +339,10 @@
 			files = (
 				AE5A488326F093DB008D62FF /* ViewController.swift in Sources */,
 				AE5A48C926F09761008D62FF /* LoginModel.swift in Sources */,
+				AE5B1A6D26F09BEA000D8DBA /* HttpCallBack.swift in Sources */,
 				AE5A488126F093DB008D62FF /* AppDelegate.swift in Sources */,
 				AE5A48D126F0976E008D62FF /* LoginView.swift in Sources */,
-				AE5A48C026F096FD008D62FF /* Http.swift in Sources */,
+				AE5A48C026F096FD008D62FF /* HttpManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

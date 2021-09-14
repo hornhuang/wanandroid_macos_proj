@@ -6,3 +6,14 @@
 //
 
 import Foundation
+
+class LoginModel {
+    
+    fileprivate var username = ""
+    fileprivate var password = ""
+    
+    func login(callback: DADiskPeekCallback) -> Bool {
+        return true
+    }
+    
+}
