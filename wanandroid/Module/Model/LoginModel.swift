@@ -10,7 +10,7 @@ import Foundation
 class LoginModel {
     fileprivate var username = "_yuanhao"
     fileprivate var password = "QAZqaz123456"
-//    fileprivate var LoginModel?
+    fileprivate var user: User?
 
     func login() {
         if username.count == 0 {
@@ -21,11 +21,13 @@ class LoginModel {
             Notify.post(name: .LoginFailed, object: "密码不能为空")
             return
         }
-        HttpManager.POSTRequestSession(urlstr: "https://www.wanandroid.com/user/login", parameters: ["username": username, "password": password], Success: { response in
-            guard let userData = response as? NSDictionary else {
+        
+        HttpManager.POSTRequestSession(urlstr: "https://www.wanandroid.com/user/login", parameters: ["username": username, "password": password], Success: { [weak self] response in
+            guard let userData = response as? [String:Any] else {
                 return
             }
-            Notify.post(name: .LoginSucceed, object: userData)
+            Notify.post(name: .LoginSucceed)
+            self?.user = UserBuilder(fromDictionary: userData).user
             print("原生请求返回数据", userData)
         }, Fail: { error in
             Notify.post(name: .LoginFailed, object: error)

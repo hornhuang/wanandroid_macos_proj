@@ -8,6 +8,10 @@
 import Foundation
 
 class Notify {
+    class func post(name aName: NSNotification.Name) {
+        NotificationCenter.default.post(name: aName, object: nil)
+    }
+    
     class func post(name aName: NSNotification.Name, object anObject: Any?) {
         NotificationCenter.default.post(name: aName, object: anObject)
     }
