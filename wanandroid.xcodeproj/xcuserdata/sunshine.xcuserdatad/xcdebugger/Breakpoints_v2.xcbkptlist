@@ -23,23 +23,23 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F1BA1A3D-2850-4E08-8110-53995DF9C77A"
+            uuid = "EBE3BA49-9780-4293-9DFD-148B84318998"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "wanandroid/Module/Model/LoginModel.swift"
+            filePath = "wanandroid/Common/Client/HttpManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "login()"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "POSTRequestSession(urlstr:parameters:Success:Fail:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E1DD0B3B-CEFC-4710-A6ED-CA590DCA7AD6"
+            uuid = "FA69F556-1178-4815-8090-DBABC118357B"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
