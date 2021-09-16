@@ -8,6 +8,7 @@
 import Foundation
 import AppKit
 
-class InputTextCell {
+public class TextFieldCell: NSTableCellView {
+    public static let Identifier = "TextFieldCell"
     
 }

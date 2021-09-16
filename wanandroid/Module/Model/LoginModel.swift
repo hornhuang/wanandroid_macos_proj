@@ -7,9 +7,15 @@
 
 import Foundation
 
+protocol LoginModelDelegate {
+    func onSucceed(user: User)
+    func onFailed(errMsg: String)
+}
+
 class LoginModel {
     fileprivate var username = "_yuanhao"
     fileprivate var password = "QAZqaz123456"
+    fileprivate var delegate: LoginModelDelegate?
     fileprivate var user: User?
 
     func login() {
@@ -26,8 +32,8 @@ class LoginModel {
             guard let userData = response as? [String:Any] else {
                 return
             }
-            Notify.post(name: .LoginSucceed)
             self?.user = UserBuilder(fromDictionary: userData).user
+            Notify.post(name: .LoginSucceed, object: self?.user)
             print("原生请求返回数据", userData)
         }, Fail: { error in
             Notify.post(name: .LoginFailed, object: error)
