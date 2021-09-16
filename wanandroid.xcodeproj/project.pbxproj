@@ -193,10 +193,8 @@
 		AE5A48BD26F096BE008D62FF /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				AE77EF3926F32A3A004ED830 /* Manager */,
-				AE5A48B426F09672008D62FF /* Model */,
-				AE5A48B326F0966D008D62FF /* Controller */,
-				AE5A48B226F09664008D62FF /* View */,
+				AE77EF4326F34B0B004ED830 /* Home */,
+				AE77EF4226F34AD5004ED830 /* Login */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -254,6 +252,24 @@
 				AE77EF3A26F32A4B004ED830 /* UserManager.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		AE77EF4226F34AD5004ED830 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				AE77EF3926F32A3A004ED830 /* Manager */,
+				AE5A48B426F09672008D62FF /* Model */,
+				AE5A48B326F0966D008D62FF /* Controller */,
+				AE5A48B226F09664008D62FF /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		AE77EF4326F34B0B004ED830 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

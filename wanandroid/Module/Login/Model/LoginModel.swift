@@ -13,8 +13,8 @@ protocol LoginModelDelegate {
 }
 
 class LoginModel {
-    fileprivate var username = "_yuanhao"
-    fileprivate var password = "QAZqaz123456"
+    public var username = ""
+    public var password = ""
     fileprivate var delegate: LoginModelDelegate?
     fileprivate var user: User?
 
@@ -30,6 +30,10 @@ class LoginModel {
         
         HttpManager.POSTRequestSession(urlstr: "https://www.wanandroid.com/user/login", parameters: ["username": username, "password": password], Success: { [weak self] response in
             guard let userData = response as? [String:Any] else {
+                return
+            }
+            guard userData["errorCode"] as? Int == 0 else {
+                Notify.post(name: .LoginFailed, object: userData["errorMsg"])
                 return
             }
             self?.user = UserBuilder(fromDictionary: userData).user
