@@ -1,0 +1,6 @@
+module Pods_wanandroid {
+  umbrella header "Pods-wanandroid-umbrella.h"
+
+  export *
+  module * { export * }
+}
