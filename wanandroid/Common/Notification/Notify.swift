@@ -19,6 +19,10 @@ class Notify {
     class func add(_ observer: Any, selector aSelector: Selector, name aName: NSNotification.Name?) {
         NotificationCenter.default.addObserver(observer, selector: aSelector, name: aName, object: nil)
     }
+    
+    class func remove(_ observer: Any) {
+        NotificationCenter.default.removeObserver(observer)
+    }
 }
 
 extension NSNotification.Name {
@@ -26,5 +30,7 @@ extension NSNotification.Name {
     public static let LoginSucceed: NSNotification.Name = NSNotification.Name(rawValue: "LoginSucceedNotification")
     
     public static let LoginFailed: NSNotification.Name = NSNotification.Name(rawValue: "LoginFailedNotification")
+    
+    public static let TerminateWindow: NSNotification.Name = NSNotification.Name(rawValue: "TerminateWindowNotification")
     
 }

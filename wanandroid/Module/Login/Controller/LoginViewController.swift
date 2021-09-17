@@ -8,6 +8,9 @@
 import Cocoa
 
 class LoginViewController: NSViewController {
+    
+    var loginWC: LoginWindowController?
+    
     /// 只实例化一次，后续不变的对象适合用懒加载
     fileprivate let loginModel: LoginModel = {
         return LoginModel()
@@ -36,6 +39,15 @@ class LoginViewController: NSViewController {
         return btn
     }()
     
+    init() {
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+//        fatalError("init(coder:) has not been implemented")
+        super.init(coder: coder)
+    }
+    
     fileprivate var loginView: LoginView?
     
     override func viewDidLoad() {
@@ -44,9 +56,12 @@ class LoginViewController: NSViewController {
         self.load()
     }
     
+    override func loadView() {
+        self.view = NSView()
+    }
+    
     override func viewDidAppear() {
         super.viewDidAppear()
-        loginModel.login()
     }
     
     fileprivate func config() {
@@ -89,6 +104,19 @@ class LoginViewController: NSViewController {
         loginModel.username = userNameTextField.stringValue
         loginModel.password = passwordTextField.stringValue
         loginModel.login()
+    }
+    
+    func detachWindow() {
+        if loginWC == nil {
+            let loginWindow = NSWindow(contentRect: .zero, styleMask: [.titled, .closable, .miniaturizable, .resizable, .fullSizeContentView], backing: NSWindow.BackingStoreType.buffered, defer: false)
+            loginWindow.contentViewController = self
+            loginWindow.isRestorable = false
+            loginWindow.setFrame(NSMakeRect(0.0, 0.0, 256.0, 320.0), display: true)
+            loginWindow.makeKeyAndOrderFront(self)
+            loginWindow.center()
+            loginWC = LoginWindowController(window: loginWindow)
+        }
+        loginWC?.showWindow(self)
     }
     
 }
@@ -138,7 +166,11 @@ extension LoginViewController {
         if let user = notification.object as? User {
             UserManager.shared.update(user: user)
         }
-        // TODO
+        DispatchQueue.main.sync {
+            Notify.post(name: .TerminateWindow, object: self.view.window)
+            NSView().window?.close()
+            self.dismiss(nil)
+        }
     }
     
     @objc func onFailed(notification: NSNotification) {

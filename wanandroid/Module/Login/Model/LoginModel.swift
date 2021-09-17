@@ -36,7 +36,7 @@ class LoginModel {
                 Notify.post(name: .LoginFailed, object: userData["errorMsg"])
                 return
             }
-            self?.user = UserBuilder(fromDictionary: userData).user
+            self?.user = UserResponse(fromDictionary: userData).user
             Notify.post(name: .LoginSucceed, object: self?.user)
             print("原生请求返回数据", userData)
         }, Fail: { error in

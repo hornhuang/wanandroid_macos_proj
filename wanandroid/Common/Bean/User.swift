@@ -163,7 +163,7 @@ class User : NSObject, NSCoding{
 
 }
 
-class UserBuilder : NSObject, NSCoding{
+class UserResponse : NSObject, NSCoding{
 
     var user : User!
     var errorCode : Int!
