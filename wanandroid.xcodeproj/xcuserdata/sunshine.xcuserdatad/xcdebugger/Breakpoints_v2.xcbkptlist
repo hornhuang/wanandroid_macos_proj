@@ -259,8 +259,8 @@
             filePath = "wanandroid/Module/Login/Controller/LoginViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "170"
-            endingLineNumber = "170"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
             landmarkName = "onSucceed(notification:)"
             landmarkType = "7">
          </BreakpointContent>

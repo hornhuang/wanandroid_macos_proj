@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		257E12493D828E37DC4928D2 /* libPods-wanandroid.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F45D7DACC323B83259177AA8 /* libPods-wanandroid.a */; };
 		AE5A488126F093DB008D62FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5A488026F093DB008D62FF /* AppDelegate.swift */; };
 		AE5A488326F093DB008D62FF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5A488226F093DB008D62FF /* LoginViewController.swift */; };
 		AE5A488526F093DC008D62FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE5A488426F093DC008D62FF /* Assets.xcassets */; };
@@ -28,7 +29,9 @@
 		AE77EF4D26F363CC004ED830 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE77EF4C26F363CC004ED830 /* MainViewController.swift */; };
 		AE8A1A3126F44A4600CD5C41 /* BaseWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8A1A3026F44A4600CD5C41 /* BaseWindowController.swift */; };
 		AE8A1A3926F48D3F00CD5C41 /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8A1A3826F48D3F00CD5C41 /* ArticleModel.swift */; };
-		AE8A1A3E26F490A000CD5C41 /* PlaygroundModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8A1A3D26F490A000CD5C41 /* PlaygroundModel.swift */; };
+		AE8A1A4426F491A000CD5C41 /* ArticleCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8A1A4326F491A000CD5C41 /* ArticleCellViewModel.swift */; };
+		AE8A1A4C26F4929100CD5C41 /* PlaygroundViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8A1A4B26F4929100CD5C41 /* PlaygroundViewModel.swift */; };
+		AE8A1A5126F49B1A00CD5C41 /* ArticlePageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8A1A5026F49B1A00CD5C41 /* ArticlePageModel.swift */; };
 		AE91186426F3698C0032B886 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE91186326F3698C0032B886 /* MainWindowController.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		456F61810EA60D7D2686BE04 /* Pods-wanandroid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wanandroid.debug.xcconfig"; path = "Target Support Files/Pods-wanandroid/Pods-wanandroid.debug.xcconfig"; sourceTree = "<group>"; };
+		94E6C4201CBB72463F77C1CC /* Pods-wanandroid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wanandroid.release.xcconfig"; path = "Target Support Files/Pods-wanandroid/Pods-wanandroid.release.xcconfig"; sourceTree = "<group>"; };
 		AE5A487D26F093DB008D62FF /* wanandroid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wanandroid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5A488026F093DB008D62FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE5A488226F093DB008D62FF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -78,8 +83,11 @@
 		AE77EF4C26F363CC004ED830 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AE8A1A3026F44A4600CD5C41 /* BaseWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWindowController.swift; sourceTree = "<group>"; };
 		AE8A1A3826F48D3F00CD5C41 /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
-		AE8A1A3D26F490A000CD5C41 /* PlaygroundModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundModel.swift; sourceTree = "<group>"; };
+		AE8A1A4326F491A000CD5C41 /* ArticleCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCellViewModel.swift; sourceTree = "<group>"; };
+		AE8A1A4B26F4929100CD5C41 /* PlaygroundViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundViewModel.swift; sourceTree = "<group>"; };
+		AE8A1A5026F49B1A00CD5C41 /* ArticlePageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlePageModel.swift; sourceTree = "<group>"; };
 		AE91186326F3698C0032B886 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		F45D7DACC323B83259177AA8 /* libPods-wanandroid.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wanandroid.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				257E12493D828E37DC4928D2 /* libPods-wanandroid.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +116,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7FA79B514F647E6CB414FFAE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				456F61810EA60D7D2686BE04 /* Pods-wanandroid.debug.xcconfig */,
+				94E6C4201CBB72463F77C1CC /* Pods-wanandroid.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AE5A487426F093DB008D62FF = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +133,8 @@
 				AE5A489226F093DC008D62FF /* wanandroidTests */,
 				AE5A489D26F093DC008D62FF /* wanandroidUITests */,
 				AE5A487E26F093DB008D62FF /* Products */,
+				7FA79B514F647E6CB414FFAE /* Pods */,
+				DF08E768E3567041D85791AF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -272,9 +293,9 @@
 		AE77EF4326F34B0B004ED830 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				AE8A1A4226F4917F00CD5C41 /* Model */,
 				AE77EF4B26F3638A004ED830 /* ViewModel */,
 				AE77EF4A26F36373004ED830 /* View */,
-				AE8A1A3D26F490A000CD5C41 /* PlaygroundModel.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -291,6 +312,8 @@
 		AE77EF4B26F3638A004ED830 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				AE8A1A4326F491A000CD5C41 /* ArticleCellViewModel.swift */,
+				AE8A1A4B26F4929100CD5C41 /* PlaygroundViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -311,6 +334,22 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		AE8A1A4226F4917F00CD5C41 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AE8A1A5026F49B1A00CD5C41 /* ArticlePageModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DF08E768E3567041D85791AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F45D7DACC323B83259177AA8 /* libPods-wanandroid.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -318,6 +357,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE5A48A326F093DC008D62FF /* Build configuration list for PBXNativeTarget "wanandroid" */;
 			buildPhases = (
+				EADE40CD6A1675DB2481E67B /* [CP] Check Pods Manifest.lock */,
 				AE5A487926F093DB008D62FF /* Sources */,
 				AE5A487A26F093DB008D62FF /* Frameworks */,
 				AE5A487B26F093DB008D62FF /* Resources */,
@@ -435,6 +475,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		EADE40CD6A1675DB2481E67B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-wanandroid-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AE5A487926F093DB008D62FF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -448,17 +513,19 @@
 				AE5A48D126F0976E008D62FF /* LoginView.swift in Sources */,
 				AE5B1A8D26F0AAB2000D8DBA /* User.swift in Sources */,
 				AE8A1A3126F44A4600CD5C41 /* BaseWindowController.swift in Sources */,
+				AE8A1A4C26F4929100CD5C41 /* PlaygroundViewModel.swift in Sources */,
 				AE5B1A8026F0A59C000D8DBA /* Notify.swift in Sources */,
 				AE5B1AB726F0CF7C000D8DBA /* LoginModelDataSource.swift in Sources */,
 				AE8A1A3926F48D3F00CD5C41 /* ArticleModel.swift in Sources */,
 				AE5B1A9926F0C5B2000D8DBA /* LoginTableView.swift in Sources */,
+				AE8A1A5126F49B1A00CD5C41 /* ArticlePageModel.swift in Sources */,
 				AE77EF4D26F363CC004ED830 /* MainViewController.swift in Sources */,
 				AE5B1A7826F09EAD000D8DBA /* Urls.swift in Sources */,
 				AE5B1AC526F0D627000D8DBA /* LoginWindowController.swift in Sources */,
 				AE5A48C026F096FD008D62FF /* HttpManager.swift in Sources */,
 				AE5B1AA126F0C5C2000D8DBA /* TextFieldCell.swift in Sources */,
+				AE8A1A4426F491A000CD5C41 /* ArticleCellViewModel.swift in Sources */,
 				AE5B1AA626F0C5F7000D8DBA /* LoginButtonCell.swift in Sources */,
-				AE8A1A3E26F490A000CD5C41 /* PlaygroundModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -622,6 +689,7 @@
 		};
 		AE5A48A426F093DC008D62FF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 456F61810EA60D7D2686BE04 /* Pods-wanandroid.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -641,6 +709,7 @@
 		};
 		AE5A48A526F093DC008D62FF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94E6C4201CBB72463F77C1CC /* Pods-wanandroid.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

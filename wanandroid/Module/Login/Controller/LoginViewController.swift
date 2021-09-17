@@ -16,9 +16,6 @@ class LoginViewController: NSViewController {
         return LoginModel()
     }()
     
-    fileprivate var tableView: NSTableView = NSTableView()
-    fileprivate var scrollView: NSScrollView = NSScrollView()
-    
     fileprivate let userNameTextField: NSTextField = {
         let textField = NSTextField()
         textField.placeholderString = "账户"
@@ -74,17 +71,8 @@ class LoginViewController: NSViewController {
         
         self.loginBtn.action = #selector(login)
         self.view.addSubview(loginBtn)
-//        scrollView.hasVerticalScroller = true
-//        scrollView.frame = self.view.bounds
-//        self.view = scrollView
-//
-//        let column: NSTableColumn = NSTableColumn(identifier: NSUserInterfaceItemIdentifier(rawValue: "login"))
-//        tableView.addTableColumn(column)
-//        tableView.frame         = self.view.bounds
-//        tableView.delegate      = self
-//        tableView.dataSource    = self
-//        scrollView.contentView.documentView = tableView
     }
+    
     override func viewWillLayout() {
         let width = self.view.bounds.width
         let height = self.view.bounds.height
@@ -124,40 +112,6 @@ class LoginViewController: NSViewController {
 extension LoginViewController: NSTextFieldDelegate {
     func controlTextDidChange(_ obj: Notification) {
         print("\(obj)")
-    }
-}
-
-extension LoginViewController: NSTableViewDelegate {}
-
-extension LoginViewController: NSTableViewDataSource {
-    func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
-        var cell: NSTableCellView?
-        
-        if tableColumn == tableView.tableColumns[0] {
-            if row == 0 {
-                cell = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: TextFieldCell.Identifier), owner: nil) as? TextFieldCell ?? TextFieldCell()
-                cell?.textField?.placeholderString = "账号"
-                cell?.imageView?.image = NSImage(named: "AppIcon")
-            } else if row == 1 {
-                cell = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: TextFieldCell.Identifier), owner: nil) as? TextFieldCell ?? TextFieldCell()
-                cell?.textField?.placeholderString = "密码"
-                cell?.layer?.backgroundColor = NSColor.red.cgColor
-            } else {
-                cell = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: LoginButtonCell.Identifier), owner: nil) as? LoginButtonCell ?? LoginButtonCell()
-                cell?.textField?.stringValue = "登录"
-                cell?.imageView?.image = NSImage(named: "AppIcon")
-            }
-        }
-        
-        return cell
-    }
-    
-    func numberOfRows(in tableView: NSTableView) -> Int {
-        return 3
-    }
-    
-    func tableView(_ tableView: NSTableView, heightOfRow row: Int) -> CGFloat {
-        return 44
     }
 }
 

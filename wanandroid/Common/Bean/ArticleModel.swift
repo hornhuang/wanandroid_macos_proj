@@ -11,77 +11,8 @@
 
 import Foundation
 
-
-class RootClass : NSObject, NSCoding{
-
-    var data : ArticleModel!
-    var errorCode : Int!
-    var errorMsg : String!
-
-
-    /**
-     * Instantiate the instance using the passed dictionary values to set the properties values
-     */
-    init(fromDictionary dictionary: [String:Any]){
-        if let dataData = dictionary["data"] as? [String:Any]{
-            data = ArticleModel(fromDictionary: dataData)
-        }
-        errorCode = dictionary["errorCode"] as? Int
-        errorMsg = dictionary["errorMsg"] as? String
-    }
-
-    /**
-     * Returns all the available property values in the form of [String:Any] object where the key is the approperiate json key and the value is the value of the corresponding property
-     */
-    func toDictionary() -> [String:Any]
-    {
-        var dictionary = [String:Any]()
-        if data != nil{
-            dictionary["data"] = data.toDictionary()
-        }
-        if errorCode != nil{
-            dictionary["errorCode"] = errorCode
-        }
-        if errorMsg != nil{
-            dictionary["errorMsg"] = errorMsg
-        }
-        return dictionary
-    }
-
-    /**
-    * NSCoding required initializer.
-    * Fills the data from the passed decoder
-    */
-    @objc required init(coder aDecoder: NSCoder)
-    {
-         data = aDecoder.decodeObject(forKey: "data") as? ArticleModel
-         errorCode = aDecoder.decodeObject(forKey: "errorCode") as? Int
-         errorMsg = aDecoder.decodeObject(forKey: "errorMsg") as? String
-
-    }
-
-    /**
-    * NSCoding required method.
-    * Encodes mode properties into the decoder
-    */
-    @objc func encode(with aCoder: NSCoder)
-    {
-        if data != nil{
-            aCoder.encode(data, forKey: "data")
-        }
-        if errorCode != nil{
-            aCoder.encode(errorCode, forKey: "errorCode")
-        }
-        if errorMsg != nil{
-            aCoder.encode(errorMsg, forKey: "errorMsg")
-        }
-
-    }
-
-}
-
 class ArticleModel : NSObject, NSCoding{
-
+    
     var apkLink : String!
     var audit : Int!
     var author : String!
@@ -115,13 +46,6 @@ class ArticleModel : NSObject, NSCoding{
     var userId : Int!
     var visible : Int!
     var zan : Int!
-    var curPage : Int!
-    var ArticleModels : [ArticleModel]!
-    var offset : Int!
-    var over : Bool!
-    var pageCount : Int!
-    var size : Int!
-    var total : Int!
 
 
     /**
@@ -161,19 +85,6 @@ class ArticleModel : NSObject, NSCoding{
         userId = dictionary["userId"] as? Int
         visible = dictionary["visible"] as? Int
         zan = dictionary["zan"] as? Int
-        curPage = dictionary["curPage"] as? Int
-        ArticleModels = [ArticleModel]()
-        if let ArticleModelsArray = dictionary["ArticleModels"] as? [[String:Any]]{
-            for dic in ArticleModelsArray{
-                let value = ArticleModel(fromDictionary: dic)
-                ArticleModels.append(value)
-            }
-        }
-        offset = dictionary["offset"] as? Int
-        over = dictionary["over"] as? Bool
-        pageCount = dictionary["pageCount"] as? Int
-        size = dictionary["size"] as? Int
-        total = dictionary["total"] as? Int
     }
 
     /**
@@ -281,37 +192,12 @@ class ArticleModel : NSObject, NSCoding{
         if zan != nil{
             dictionary["zan"] = zan
         }
-        if curPage != nil{
-            dictionary["curPage"] = curPage
-        }
-        if ArticleModels != nil{
-            var dictionaryElements = [[String:Any]]()
-            for ArticleModelsElement in ArticleModels {
-                dictionaryElements.append(ArticleModelsElement.toDictionary())
-            }
-            dictionary["ArticleModels"] = dictionaryElements
-        }
-        if offset != nil{
-            dictionary["offset"] = offset
-        }
-        if over != nil{
-            dictionary["over"] = over
-        }
-        if pageCount != nil{
-            dictionary["pageCount"] = pageCount
-        }
-        if size != nil{
-            dictionary["size"] = size
-        }
-        if total != nil{
-            dictionary["total"] = total
-        }
         return dictionary
     }
 
     /**
     * NSCoding required initializer.
-    * Fills the ArticleModel from the passed decoder
+    * Fills the data from the passed decoder
     */
     @objc required init(coder aDecoder: NSCoder)
     {
@@ -348,13 +234,6 @@ class ArticleModel : NSObject, NSCoding{
          userId = aDecoder.decodeObject(forKey: "userId") as? Int
          visible = aDecoder.decodeObject(forKey: "visible") as? Int
          zan = aDecoder.decodeObject(forKey: "zan") as? Int
-         curPage = aDecoder.decodeObject(forKey: "curPage") as? Int
-         ArticleModels = aDecoder.decodeObject(forKey :"ArticleModels") as? [ArticleModel]
-         offset = aDecoder.decodeObject(forKey: "offset") as? Int
-         over = aDecoder.decodeObject(forKey: "over") as? Bool
-         pageCount = aDecoder.decodeObject(forKey: "pageCount") as? Int
-         size = aDecoder.decodeObject(forKey: "size") as? Int
-         total = aDecoder.decodeObject(forKey: "total") as? Int
 
     }
 
@@ -462,27 +341,6 @@ class ArticleModel : NSObject, NSCoding{
         }
         if zan != nil{
             aCoder.encode(zan, forKey: "zan")
-        }
-        if curPage != nil{
-            aCoder.encode(curPage, forKey: "curPage")
-        }
-        if ArticleModels != nil{
-            aCoder.encode(ArticleModels, forKey: "ArticleModels")
-        }
-        if offset != nil{
-            aCoder.encode(offset, forKey: "offset")
-        }
-        if over != nil{
-            aCoder.encode(over, forKey: "over")
-        }
-        if pageCount != nil{
-            aCoder.encode(pageCount, forKey: "pageCount")
-        }
-        if size != nil{
-            aCoder.encode(size, forKey: "size")
-        }
-        if total != nil{
-            aCoder.encode(total, forKey: "total")
         }
 
     }

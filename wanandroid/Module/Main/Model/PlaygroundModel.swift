@@ -8,10 +8,5 @@
 import Foundation
 
 class PlaygroundModel: NSObject {
-    fileprivate var article: ArticleModel
-    
-    init(article: ArticleModel) {
-        self.article = article
-        super.init()
-    }
+
 }
